@@ -305,11 +305,6 @@ var Hangup = function() {
 }
  
 Hangup.prototype = new Verb();
- 
-
-
-
-
 
 var verbs = [];
     
