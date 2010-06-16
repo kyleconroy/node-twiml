@@ -1,4 +1,4 @@
-require('./twiml').dsl();
+require('../lib/twiml').dsl();
 
 var System = require('sys');
 
