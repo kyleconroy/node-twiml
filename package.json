@@ -1,0 +1,11 @@
+{
+  "name": "node-twiml",
+  "description": "Node module for helping create Twiml",
+  "version": "0.1.0",
+  "author": "Kyle Conroy <kyle.j.conroy@gmail.com>",
+  "keywords": ["node", "twilio", "twiml"],
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": { "node": ">= 0.1.98" }
+}
