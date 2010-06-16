@@ -1,4 +1,5 @@
-require('./twiml');
+require('./twiml').dsl();
+
 var System = require('sys');
 
 System.puts(twiml(function(){
