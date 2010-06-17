@@ -1,7 +1,61 @@
 # node-twiml
 
-Blah
+A node module for easily creating [TwiML](http://www.twilio.com/docs/api/twiml/)
 
+Compatible (and tested) on
+
+    Node 0.1.98
+
+## Examples
+
+    require('twiml').dsl();
+    
+    twiml(function(){
+
+        say("Hello World")
+            .voice("male")
+
+        play("url-to-mp3")
+            .loop(5)
+
+        gather(function(){
+
+            record().method("POST")
+        
+            dial("5454567890")
+
+        })
+        
+        pause().length(10)
+        hangup()
+
+    });
+
+If you would rather not pollute the global namespace
+
+    var tw = require('twiml');
+
+    tw.twiml(function(){
+
+        tw.say("Hello World")
+            .voice("male")
+
+        tw.play("url-to-mp3")
+            .loop(5)
+
+        tw.gather(function(){
+
+            tw.record().method("POST")
+    
+            tw.dial("5454567890")
+
+        })
+    
+        tw.pause().length(10)
+        tw.hangup()
+
+    });
+    
 ## License 
 
 (The MIT License)
